@@ -1,0 +1,80 @@
+/* ----- Custom properties ----- */
+:root {
+  --clr-text-500: hsl(14, 88%, 65%);
+  --clr-text-900: hsl(238, 29%, 16%);
+
+  --clr-background-500: hsl(273, 75%, 66%);
+  --clr-background-600: hsl(240, 73%, 65%);
+
+  --clr-text2-700: hsl(240, 6%, 50%);
+  --clr-text2-900: hsl(237, 12%, 33%);
+
+  --clr-divider-500: hsl(240, 5%, 91%);
+
+  --ff-base: 'Kumbh Sans', sans-serif;
+}
+
+/* ----- CSS reset by Josh Comeau ----- */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
