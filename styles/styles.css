@@ -3,6 +3,7 @@
   --clr-text-500: hsl(14, 88%, 65%);
   --clr-text-900: hsl(238, 29%, 16%);
 
+  --clr-background-100: hsl(0, 0%, 100%);
   --clr-background-500: hsl(273, 75%, 66%);
   --clr-background-600: hsl(240, 73%, 65%);
 
@@ -12,6 +13,9 @@
   --clr-divider-500: hsl(240, 5%, 91%);
 
   --ff-base: 'Kumbh Sans', sans-serif;
+
+  --fs-500: 0.825rem;
+  --fs-900: 2rem;
 }
 
 /* ----- CSS reset by Josh Comeau ----- */
@@ -77,4 +81,108 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+/*
+  9. Remove button styling
+*/
+button,
+input[type='submit'],
+input[type='reset'] {
+  all: unset;
+  cursor: pointer;
+}
+/*
+  10. Remove list styling
+*/
+li {
+  list-style-type: none;
+}
+
+/* Utilities */
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ----- General Styling ----- */
+body {
+  background: var(--clr-background-500)
+    linear-gradient(var(--clr-background-500), var(--clr-background-600));
+  padding: 9.25rem 1.5rem;
+  font-family: var(--ff-base);
+}
+
+/* ----- Card ---- */
+
+.card {
+  background-color: var(--clr-background-100);
+  border-radius: 1rem;
+  padding: 7.85rem 1.5rem;
+  position: relative;
+}
+
+.card__illustration {
+  z-index: 2;
+  position: absolute;
+  width: 14.875rem;
+  top: -6.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card__illustration-shadow {
+  z-index: 1;
+  position: absolute;
+  width: 14.875rem;
+  top: -0.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.card__title {
+  text-align: center;
+  font-size: var(--fs-900);
+}
+
+.accordion__li {
+  border-bottom: 1px solid var(--clr-divider-500);
+  padding: 0.455rem 0;
+}
+
+.accordion__btn {
+  color: var(--clr-text2-900);
+  width: 100%;
+  font-size: var(--fs-500);
+  padding: 0.5rem 0;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__icon {
+  width: 0.625rem;
+  height: 0.4375rem;
+}
+
+.question__content {
+  color: var(--clr-text2-700);
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
 }

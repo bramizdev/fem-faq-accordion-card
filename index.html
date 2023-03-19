@@ -7,7 +7,7 @@
     <meta name="author" content="Brayan Miza" />
     <meta
       name="description"
-      content="This is a solution to the FAQ accordion card challenge on Frontend Mentor."
+      content="This is my solution to the FAQ accordion card challenge on Frontend Mentor."
     />
     <!-- Favicon -->
     <link
@@ -29,59 +29,112 @@
   </head>
   <body>
     <main>
-      <h1 class="visually-hidden">
-        FAQ accordion card challenge on Frontend Mentor
-      </h1>
-      <section>
-        <h2>FAQ</h2>
-        <ul>
-          <li>
-            <button>How many team members can I invite?</button>
-            <div>
-              <p>
-                You can invite up to 2 additional users on the Free plan. There
-                is no limit on team members for the Premium plan.
-              </p>
-            </div>
-          </li>
-          <li>
-            <button>What is the maximum file upload size?</button>
-            <div>
-              <p>
-                No more than 2GB. All files in your account must fit your
-                allotted storage space.
-              </p>
-            </div>
-          </li>
-          <li>
-            <button>How do I reset my password?</button>
-            <div>
-              <p>
-                Click “Forgot password” from the login page or “Change password”
-                from your profile page. A reset link will be emailed to you.
-              </p>
-            </div>
-          </li>
-          <li>
-            <button>Can I cancel my subscription?</button>
-            <div>
-              <p>
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </p>
-            </div>
-          </li>
-          <li>
-            <button>Do you provide additional support?</button>
-            <div>
-              <p>
-                Chat and email support is available 24/7. Phone lines are open
-                during normal business hours.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <h1 class="visually-hidden">FAQ accordion card challenge</h1>
+      <article class="card">
+        <picture class="card__illustration" aria-hidden="true">
+          <source srcset="./images/" media="(min-width: 600px)" />
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </picture>
+        <picture class="card__illustration-shadow" aria-hidden="true">
+          <source srcset="./images/" media="(min-width: 600px)" />
+          <img src="./images/bg-pattern-mobile.svg" alt="" aria-hidden="true" />
+        </picture>
+        <div class="card__content">
+          <h2 class="card__title">FAQ</h2>
+          <ul class="accordion">
+            <li class="accordion__li">
+              <button class="accordion__btn">
+                How many team members can I invite?
+                <img
+                  class="btn__icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <div>
+                <p class="question__content hidden">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+            </li>
+            <li class="accordion__li">
+              <button class="accordion__btn">
+                What is the maximum file upload size?
+                <img
+                  class="btn__icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <div>
+                <p class="question__content">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </div>
+            </li>
+            <li class="accordion__li">
+              <button class="accordion__btn">
+                How do I reset my password?
+                <img
+                  class="btn__icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <div>
+                <p class="question__content hidden">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+            </li>
+            <li class="accordion__li">
+              <button class="accordion__btn">
+                Can I cancel my subscription?
+                <img
+                  class="btn__icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <div>
+                <p class="question__content hidden">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </div>
+            </li>
+            <li class="accordion__li">
+              <button class="accordion__btn">
+                Do you provide additional support?
+                <img
+                  class="btn__icon"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </button>
+              <div>
+                <p class="question__content hidden">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
     </main>
 
     <footer class="attribution">
